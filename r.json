@@ -1,0 +1,1 @@
+{"generation":{"role":"assistant","content":null,"function_call":{"name":"search","arguments":"{\n  \"natural_query\": \"test\",\n  \"serp_query\": \"test\"\n}"}},"serpResponse":{"error":"Your searches for the month are exhausted. You can upgrade plans on SerpApi.com website."}}

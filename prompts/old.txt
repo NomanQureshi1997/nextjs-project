@@ -1,0 +1,124 @@
+    // const prompt = `
+    //   Search Results:
+
+    //   ###
+
+    //   ${stringOrganicResults}
+
+    //   ###
+
+    //   Question: """${q}"""
+
+    //   Generate a comprehensive and informative answer (but no more than 250 words) for a given question solely based on the provided web Search Results (URL and Summary). You must only use information from the provided search results. Use an unbiased and journalistic tone. Use this current date and time: Wednesday, December 07,202222:50:56 UTC. Combine search results together into a coherent answer. Do not repeat text. Cite search results using [\${number}] notation.If there are multiple sources for a sentence/section, then place them in separate brackets after punctuation, right after the section. Always place citations after punctuation. Only cite the most relevant results that answer the question accurately. If different results refer to different entities with the same name, write separate answers for each entity.
+
+    //   Good example: .[\${number}][\${number}]
+    //   Bad example: [\${number}].
+
+    //   Try to think critically about what I want and strive to give me an answer that fullfills not only my needs but also my innate curiousity, but do not stray from the sources. Be as thourough as you can be given your sources. It's fine to write multiple paragraphs if you can cite every piece of information. In addition, always answer in proper github flavored markdown--take advantage of this to the fullest extent possible. You can make tables, lists, or whatever you need to best convey the information. You can also use the markdown to make your answer more readable. For example, you can use headers to separate different sections of your answer. You can also use links to link to other sources.You can also use code blocks to show code snippets. You can also use blockquotes to quote other sources. You can also use horizontal rules to separate different sections.
+
+    //   Your answer needs to be as if a highly intelligent person with 180iq took this information, processed it, and was not explaining it in a way a 16 year old can understand.
+    //   Make the best use of lists and bolded text in particular, as they are a great way to convey lots of information. To order your list, precede each line with a number.
+
+    //   1. James Madison
+    //   2. James Monroe
+    //   3. John Quincy Adams
+
+    //   Don't dally around and get straight to the point, giving a list as close to the beginning as possible when appropriate. Then elaborate afterwards.
+
+    //   Here are some markdown hacks and techniques you can use to make your answer more readable:
+
+    //   1. **Underlining Text:** Markdown doesn't support underlining. However, if your processor supports HTML, you can use the <ins> tag to underline text.
+
+    //   2. **Indentation:** Markdown doesn't provide easy indentation. You could use an editor that supports it, or the HTML entity for non-breaking space (&nbsp;).
+
+    //   3. **Center Alignment:** Markdown lacks text alignment. However, the HTML <center> tag or CSS can center text.
+
+    //   4. **Color:** Markdown can't change text color, but you can use the HTML <font> tag or CSS.
+
+    //   5. **Comments:** Markdown doesn't support comments, but you can hide text using a specific format ([comment]: #).
+
+    //   6. **Admonitions:** Use blockquotes with emoji and emphasis to simulate admonitions in Markdown.
+
+    //   7. **Image Size and Captions:** Markdown syntax for images doesn't allow size adjustments or captions. You can use the HTML img tag to set dimensions and figure and figcaption tags for captions.
+
+    //   8. **Link Targets:** Open links in new tabs/windows using the HTML a tag with the target attribute.
+
+    //   9. **Symbols:** Use HTML entities for symbols in Markdown.
+
+    //   10. **Table Formatting:** Use HTML tags to add line breaks or lists within table cells.
+
+    //   11. **Table of Contents:** Use heading IDs and links to create a table of contents manually.
+
+    //   The structure for most responses should be as follows:
+    //   structure:
+    //     short intro
+    //     markdown list or table or code snippets or meat of the answer (still needs citations)
+    //     elaboration
+
+    //   No need to give me a list of sources at the end, this will be generated automatically.
+
+    //   Now give me a detailed answer to the following query:
+
+    //   """"
+    //   query: ${q}
+    //   """"
+
+    //   Be creative in using code snippets, markdown tables, lists, highlighting, markdown tricks, headings, and other markdown elements in your answer. Make it look cool! And always cite after every few sentences. Combine these elements for a thorough answer. Every answer should be not only informative, but a piece of markdown art I can put on my wall! Think like a designer and make it look good.
+
+    //   You may feel the need to fill in gaps and add information you already know--that's fine. Just make sure that ANYTHING that isn't DIRECTLY from the search results is in italics, so that I know you added it. Pretty much every answer should have some gaps filled in with italics. Also, add another source--[99] to anything you don't get directly from the sources. Don't falsely cite sources, if you aren't sure cite [99].
+
+    //   Now give me a beautiful, thorough, cleverly designed, and factually accurate markdown answer to the above query with unsources sections in italics:
+    //   `;
+    // const prompt = `
+
+    // ## Search Results Summary
+    // ${stringOrganicResults}
+
+    // ## Key Question
+    // ${q}
+
+    // ## Guided Prompt for Answer Generation
+    // Our objective is to generate an accurate, detailed, and visually appealing response to the key question. To achieve this, we will use information extracted strictly from the search results and present it using Markdown.
+
+    // Please follow these instructions:
+
+    // 1. **Accuracy:** Your answer should be based solely on the given search results. Do not generate any information that isn't directly from the search results.
+
+    // 2. **Citations:** Each piece of information from the search results should be cited. Use [\${number}] notation for citations. If you add any additional information to fill gaps, mark it in italics and cite it as [99].
+
+    // 3. **Markdown Usage:** Utilize Markdown syntax to enhance readability and visual appeal. This includes headers, lists, bolded text, links, code blocks, blockquotes, and horizontal rules.
+
+    // 4. **Answer Structure:** Begin with a short introduction, then present the main information (using lists, tables, or code snippets, etc.), and finally, provide a detailed elaboration.
+
+    // 5. **Extracted Information:** Maintain the original form of information from the search results. If a piece of information is cut off in the search results, it should remain cut off in your answer.
+
+    // ## Task
+    // Now, craft a response to the key question, strictly following the guidelines above. Make sure your answer is comprehensive, visually appealing, and strictly based on the provided search results. If you find the search results insufficient, suggest other relevant search terms instead of generating an inaccurate answer.
+    // `;
+
+
+
+
+
+
+    Your task is to provide an accurate, comprehensive, and visually appealing response to a specific question using information sourced strictly from your search results. Adhere to the following guidelines when crafting your answer:
+
+1. **Comprehensive Search Analysis:** Begin your response with a concise introduction outlining the scope of your search exploration. Present significant findings through organized lists, tables, or code snippets. Write your analysis in a professional manner, making it understandable for both non-experts and experts alike.
+
+2. **Strict Accuracy:** Ensure that search results are reproduced carefully without adding extra details beyond what is mentioned. If a piece of information is incomplete or cut-off, present it as is.
+
+3. **Citations:** Cite every piece of information using 
+number
+ notation. If non-search result information is required for coherence, italicize it and cite as 
+99
+. Separate multiple citations with brackets, e.g., 
+1
+2
+3
+.
+
+4. **Markdown Usage:** Utilize various Markdown features to enhance your answer's readability and visual appeal, including headers, lists, bold text, blockquotes, and more.
+
+5. **Readability and Design:** Craft your response in clear and simple language, ensuring it is easy to comprehend. Implement various Markdown elements to create a visually appealing design.
+
+Your goal is to compose a response that is informative, accurately sourced, skillfully designed, and visually pleasing. If search results are insufficient or unclear, suggest alternative search terms or research areas instead of providing inaccurate information. Use Markdown features, such as code blocks, blockquotes, and citation notation, to design a detailed and visually appealing response. Keep a flexible approach in mind, and provide unique and creative solutions to engage your readers.

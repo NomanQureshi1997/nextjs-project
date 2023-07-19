@@ -1,0 +1,68 @@
+{
+    "type": 1,
+    "target": "update",
+    "arguments": [
+      {
+        "messages": [
+          {
+            "text": "John McCain was an American politician and United States Navy officer who served as a United States senator from Arizona from 1987 until his death in 2018[^1^]. He was also the Republican nominee for president of the United States in the 2008 election, which he lost to Barack Obama[^2^]. He was known as a political maverick who often clashed with his party's right wing on various issues[^2^]. He was also a war hero who survived being a prisoner of war in Vietnam for more than five years[^2^] [^3^].\n\nIf you want to learn more about his political positions",
+            "author": "bot",
+            "createdAt": "2023-07-11T04:30:22.3183392+00:00",
+            "timestamp": "2023-07-11T04:30:22.3183392+00:00",
+            "messageId": "7987f4d6-0b00-4445-a7c8-4512a7eba6ce",
+            "offense": "Unknown",
+            "adaptiveCards": [
+              {
+                "type": "AdaptiveCard",
+                "version": "1.0",
+                "body": [
+                  {
+                    "type": "TextBlock",
+                    "text": "[1]: https://en.wikipedia.org/wiki/John_McCain \"John McCain - Wikipedia\"\n[2]: https://www.britannica.com/biography/John-McCain \"John McCain | Biography, Vietnam Experience, Political ... - Britannica\"\n[3]: https://ballotpedia.org/John_McCain \"John McCain - Ballotpedia\"\n[4]: https://en.wikipedia.org/wiki/Political_positions_of_John_McCain \"Political positions of John McCain - Wikipedia\"\n\nJohn McCain was an American politician and United States Navy officer who served as a United States senator from Arizona from 1987 until his death in 2018[^1^][1]. He was also the Republican nominee for president of the United States in the 2008 election, which he lost to Barack Obama[^2^][2]. He was known as a political maverick who often clashed with his party's right wing on various issues[^2^][2]. He was also a war hero who survived being a prisoner of war in Vietnam for more than five years[^2^][2] [^3^][3].\n\nIf you want to learn more about his political positions",
+                    "wrap": true
+                  },
+                  {
+                    "type": "TextBlock",
+                    "size": "small",
+                    "text": "Learn more: [1. en.wikipedia.org](https://en.wikipedia.org/wiki/John_McCain) [2. www.britannica.com](https://www.britannica.com/biography/John-McCain) [3. ballotpedia.org](https://ballotpedia.org/John_McCain)",
+                    "wrap": true
+                  }
+                ]
+              }
+            ],
+            "sourceAttributions": [
+              {
+                "providerDisplayName": "John McCain - Wikipedia",
+                "seeMoreUrl": "https://en.wikipedia.org/wiki/John_McCain",
+                "searchQuery": "john mccain"
+              },
+              {
+                "providerDisplayName": "John McCain | Biography, Vietnam Experience, Political ... - Britannica",
+                "seeMoreUrl": "https://www.britannica.com/biography/John-McCain",
+                "searchQuery": "john mccain"
+              },
+              {
+                "providerDisplayName": "John McCain - Ballotpedia",
+                "seeMoreUrl": "https://ballotpedia.org/John_McCain",
+                "searchQuery": "john mccain"
+              }
+            ],
+            "feedback": {
+              "tag": null,
+              "updatedOn": null,
+              "type": "None"
+            },
+            "contentOrigin": "DeepLeo",
+            "scores": [
+              {
+                "component": "BotOffense",
+                "score": 0.00066931
+              }
+            ],
+            "privacy": null
+          }
+        ],
+        "requestId": "a28f61f0-00fe-e7ec-3c23-f012cd35affa"
+      }
+    ]
+  }
